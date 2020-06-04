@@ -1,0 +1,78 @@
+/* Fonts */
+
+@font-face {
+    font-family: vazir;
+    src: url(./Fonts/vazir-fonts/Vazir.ttf);
+}
+@font-face{
+    font-family: thin-vazir;
+    src: url(./Fonts/vazir-fonts/Vazir-Thin.ttf);
+}
+@font-face{
+    font-family: bold-vazir;
+    src: url(./Fonts/vazir-fonts/Vazir-Bold.ttf);
+}
+@font-face{
+    font-family: black-vazir;
+    src: url(./Fonts/vazir-fonts/Vazir-Black.ttf);
+}
+@font-face{
+    font-family: light-vazir;
+    src: url(./Fonts/vazir-fonts/Vazir-Light.ttf);
+}
+@font-face{
+    font-family: medium-vazir;
+    src: url(./Fonts/vazir-fonts/Vazir-Medium.ttf);
+}
+
+/* Color Plate */
+
+:root{
+    --english-green: #1A535c;
+    --medium-turquoise: #4ECDC4;
+    --mint-cream: #F7FFF7;
+    --pastel-red: #FF6B6B;
+    --maize: #FFE66D;
+}
+
+/* tag default style */
+
+body{
+    font-family: vazir;
+    width: 100vw;
+}
+
+input{
+    text-align: right;
+    margin-left: 25px;
+    width: 250px;
+    padding: 5px;
+    background-color: #F1F1F1;
+    color: #818181;
+    border: 1px solid #9C9C9C;
+    border-radius: 5px;
+}
+
+input:focus{
+    background-color: white;
+}
+
+/* others */
+
+.App{
+    font-family: vazir;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.star-img{
+    height: 15px !important;
+    width: 15px !important;
+    align-self: center;
+}
+
+
+.text-align-center{
+    text-align: center;
+}

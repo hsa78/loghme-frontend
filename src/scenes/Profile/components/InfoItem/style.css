@@ -1,0 +1,15 @@
+@import '../../../../util/util.css';
+
+.name-info{
+    flex: 1;
+    align-self: center;
+    font-size: 30px;
+    font-family: bold-vazir;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.account-icon::before{
+    font-size: 45px !important;
+}

@@ -1,0 +1,19 @@
+@import '../../../../../../util/util.css';
+
+.form-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.increase-credit-btn{
+    color: white;
+    text-align: center;
+    font-family: bold-vazir;
+    border-radius: 5px;
+    padding: 7px;
+    background-color:var(--medium-turquoise);
+    padding-left: 43px;
+    padding-right: 43px;
+    cursor: pointer;
+}

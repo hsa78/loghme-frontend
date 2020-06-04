@@ -1,0 +1,10 @@
+@import '../../../../util/util.css';
+
+.content-container{
+    background-color: var(--mint-cream);
+    flex: 1;
+    position: relative;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,79 @@
+@import '../../../../../../util/util.css';
+
+:local(.styled-box){
+    border-radius: 7px;
+    min-width: 200px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 1em;
+    margin-left: 2em;
+    box-shadow: 0px 0px 7px gray;
+    background-color: white;
+}
+
+:local(.food-info){
+    display: flex;
+    padding-right: 0.7em;
+    padding-top: 0.7em;
+    padding-left: 0.7em;
+    flex-wrap: wrap;
+}
+
+:local(.food-img){
+    max-height: 85px;
+    margin: auto;
+    padding: 0.5rem;
+    border-radius: 16px;
+}
+
+:local(.name-rate-box){
+    display: flex;
+    padding-right: 0.8em;
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+:lcoal(.food-name){
+    margin: 0;
+    font-size: 17px;
+}
+
+:local(.food-rate){
+    display: flex;
+    margin-right: 10px;
+    margin-left: 15px;
+}
+
+:local(.rate){
+    padding: 0;
+    margin: 0;
+    align-self: center;
+    padding-top: 7px;
+    padding-left: 3px;
+}
+
+:local(.price){
+    font-size: 12px;
+}
+
+:local(.buying-button){
+    background-color: var(--maize);
+    font-size: 11px;
+    font-family: medium-vazir;
+    color: black !important;
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0.5rem auto;
+}
+
+:local(.empty){
+    background-color: #E5E5E5;
+    color: #5E5E5E;
+    cursor: auto;
+}  

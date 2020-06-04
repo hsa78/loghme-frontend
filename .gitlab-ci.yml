@@ -1,0 +1,13 @@
+docker-build-master:
+ # Official docker image.
+ image: docker:latest
+ stage: build
+ #services:
+ #  - docker:dind
+ before_script:
+   - docker login -u "falagheband" -p "ftmal3922" hub.docker.com/repository/docker/falagheband/ie_frontend
+ script:
+   - docker build -t myapp .
+   - docker push falagheband/ie_frontend
+ only:
+   - master

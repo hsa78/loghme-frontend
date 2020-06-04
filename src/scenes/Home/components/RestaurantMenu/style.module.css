@@ -1,0 +1,5 @@
+@import '../../../../util/util.css';
+
+:local(.menu){
+    justify-content: center;
+}

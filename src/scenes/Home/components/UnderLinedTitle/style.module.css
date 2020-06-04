@@ -1,0 +1,12 @@
+@import '../../../../util/util.css';
+
+:local(.title){
+    color: var(--english-green);
+    font-family: medium-vazir;
+    border-bottom: 2px solid;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: max-content;
+    text-align: center;
+}

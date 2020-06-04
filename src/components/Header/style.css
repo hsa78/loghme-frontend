@@ -1,0 +1,70 @@
+@import "../../util/util.css";
+
+.logo-img{
+    width: 42px;
+    margin: 0 0 0 auto;
+    padding-top: 0;
+}
+
+.header-container{
+    padding-top: 4px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 4px;
+    height: auto;
+    position: sticky;
+    align-self: flex-start;
+    top: 0;
+    z-index: 11;
+    background-color:white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.btn-exit{
+    color: var(--pastel-red);
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.badge-cart{
+    font-family: bold-vazir;
+    background-color: var(--medium-turquoise);
+    color: #EBFBF9;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    right: -7px;
+    top: 2px;
+    font-size: 9px;
+}
+
+.cart-icon{
+    position: relative;
+}
+
+.link-style{
+    color: #545454;
+}
+
+.profile-link{
+    padding-left: 15px;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.cart-modal-body{
+    padding: 0 !important;
+    width: max-content;
+}
+
+.cart-modal-content .modal-dialog .modal-content{
+    width: max-content;
+    padding: 0;
+    margin: auto;
+}

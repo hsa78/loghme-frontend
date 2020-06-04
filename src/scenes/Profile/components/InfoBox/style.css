@@ -1,0 +1,11 @@
+@import '../../../../util/util.css';
+
+.info-container{
+    background-color: var(--pastel-red);
+    position: relative;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+}

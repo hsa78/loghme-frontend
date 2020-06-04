@@ -1,0 +1,28 @@
+@import "../../../../util/util.css";
+
+.button {
+	display: flex;
+    background: var(--pastel-red);
+    color: white;
+    padding: 10px;
+    width: 140px;
+    margin: 0 auto;
+    border-radius: 40px;
+    box-shadow: 1px 6px 13px 0px var(--pastel-red);
+    transform: translateY(10px);
+    transition: all 0.1s;
+    height: 50px;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:active {
+	box-shadow: 1px 3px 13px 0px var(--english-green);
+
+}
+
+.button:hover{
+    text-decoration: none;
+    color: var(--english-green);
+}

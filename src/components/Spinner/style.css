@@ -1,0 +1,13 @@
+.full-container{
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+    display: flex;
+    flex-direction: column;
+}
+
+.spinner{
+    position: absolute;
+    display: block;
+    z-index: 10;
+}

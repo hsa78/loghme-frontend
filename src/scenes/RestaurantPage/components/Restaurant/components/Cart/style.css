@@ -1,0 +1,98 @@
+@import "../../../../../../util/util.css";
+
+.cartInfo{
+    text-align: center;
+    position: relative;
+    background-color:white;
+    max-width: 270px;
+    min-width: 210px;
+    /* height: 100%; */
+    border-radius: 10px;
+    box-shadow: 0 0 5px gray;
+    width: 100%;
+}
+
+.cartTitle{
+    border-bottom: 2px solid gray;
+    width: 70px;
+    margin: auto;
+    font-size: 14px;
+    font-family: bold-vazir;
+}
+
+.orderList{
+    position: relative;
+    border-radius: 20px;
+    border: 1px dashed gray;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+.item{
+    position: relative;
+    margin: auto;
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    padding-top: 5px;
+    border-bottom: 2px solid #E1E1E1;
+}
+
+.orderInfo{
+    position: relative;
+    margin: auto;
+    display: inline-block;
+    width: 100%;
+}
+
+.orderCount{
+    margin-left: 8px;
+    margin-right: -20px;
+}
+
+.orderPrice{
+    font-size: 11px;
+    margin-bottom: -5%;
+}
+
+.minus-icon{
+    color: var(--pastel-red);
+    margin-left: -20px;
+    cursor: pointer;
+}
+
+.minus-icon::before{
+    font-size: 12px !important;
+}
+
+.plus-icon::before{
+    font-size: 12px !important;
+}
+
+.plus-icon{
+    color: var(--english-green);
+    cursor: pointer;
+}
+
+.totalPrice{
+    position: relative;
+    margin-top: 3%;
+    font-size: 14px;
+}
+
+.confirmBtn{
+    position: relative;
+    margin-top: 3%;
+    background-color: var(--medium-turquoise);
+    border-color: var(--medium-turquoise);
+    font-size: 14px;
+    font-family: bold-vazir;
+}
+
+@media screen and (max-width: 800px) {
+    .cartInfo{
+        max-width: 240px;
+    }
+}

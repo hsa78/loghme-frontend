@@ -1,0 +1,8 @@
+@import '../../../../util/util.css';
+
+:local(.restaurants-menu-container){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+}

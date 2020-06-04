@@ -1,0 +1,9 @@
+@import '../../../../util/util.css';
+
+:local(.food-party-menu){
+    display: flex;
+    overflow: scroll;
+    width: 100vw;
+    box-shadow: 0px 2px 8px #C7D3CA;
+    margin-top: 1em;
+}

@@ -1,0 +1,71 @@
+@import "../../../../util/util.css";
+
+.inputBox {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+	color:var(--pastel-red);
+	border :1px solid #e5e5e5;
+	border-radius: 15px;
+	max-width: 343px;
+	margin: 10px auto;
+	align-items: center;
+	flex-grow: 1;
+	height: 49px;
+    cursor: pointer;
+}
+
+.inputBox input{
+    text-align: right;
+    flex: 1;
+    font-size: 20px;
+	border: 3px gray;
+	border-radius: 30px;
+	background-color: white;
+	width: 86%;
+    height: 80%;
+	margin: 0 auto;
+    margin-right: 43px;
+}
+
+.inputBox input:focus{
+    outline: none;
+    border:0;
+}
+
+.inputBox input:focus + label{
+	top: -10px;
+	right: 10px;
+	transition: all 0.3s;
+	background: white;
+	padding: 0 4px;
+	transform: scale(0.8);
+	pointer-events: none;
+}
+
+.inputBox input:valid + label{
+	top: -10px;
+	right: 10px;
+	background: white;
+}
+
+.inputBox label{
+	position: absolute;
+	top: 12px;
+    right: 48px;
+    cursor: text;
+}
+
+.inputBox i{
+    position: absolute;
+    right: 0;
+}
+
+.inputBox .flaticon-account::before,.inputBox .flaticon-mail::before,.inputBox .flaticon-phone::before,
+.inputBox .fa-lock::before{
+    font-size: 19px;
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+

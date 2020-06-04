@@ -1,0 +1,23 @@
+@import '../../../../util/util.css';
+
+.home-title-box{
+    position: relative;
+    height: 27vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.home-logo-img{
+    height: 40%;
+    margin: auto;
+    margin-bottom: 1%;
+}
+
+.home-title-box p{
+    color: white;
+    font-family: medium-vazir;
+    font-size: 2.5vw;
+    margin-bottom: 8%;
+}

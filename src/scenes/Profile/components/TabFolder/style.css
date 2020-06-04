@@ -1,0 +1,18 @@
+@import '../../../../util/util.css';
+
+.tab-folder{
+    background-color: white;
+    align-self: center;
+    width: 55%;
+    border-radius: 20px;
+    border: 1px solid #B9B9B9;
+    padding-bottom: 1rem;
+    margin: 0;
+    margin-top: 6em;
+}
+
+@media only screen and (max-width: 1000px) {
+    .tab-folder {
+      width: 90%;
+    }
+}

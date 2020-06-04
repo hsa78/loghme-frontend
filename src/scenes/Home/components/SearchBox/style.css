@@ -1,0 +1,32 @@
+@import '../../../../util/util.css';
+
+.search-box{
+    display: flex;
+    width: max-content;
+    margin: 0 auto;
+    background-color: white;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    padding-left: 1em;
+    padding-right: 1em;
+    position: relative;
+    top: -32px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 4px gray;
+}
+
+.search-input{
+    text-align: center;
+    width: 18vw;
+    height: 43px;
+    margin-left: 6px;
+}
+
+.search-button{
+    background-color: var(--maize);
+    color: var(--english-green);
+    border-radius: 7px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    border: none;
+}

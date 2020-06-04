@@ -1,0 +1,24 @@
+@import '../../../../util/util.css';
+
+.content-container{
+    flex: 1;
+    background-color: var(--mint-cream);
+}
+
+.load-more{
+  display: block;
+  border: 0;
+  margin: 1em auto;
+  padding: .75em 1em;
+  font-size: 1em;
+  background-color: #c34d41;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.load-more:disabled{
+  background-color: gray;
+  cursor: text;
+}

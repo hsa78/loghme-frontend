@@ -1,0 +1,44 @@
+@import '../../../../../../util/util.css';
+
+.order-item{
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    border: 1px solid #B0B0B0;
+    font-size: 18px;
+    border-radius: 6px;
+    background-color:#FBFBFB;
+
+}
+
+.right-border{
+    border-right: 1px solid #B0B0B0;
+}
+
+.status{
+    padding: 4px;
+    border-radius: 7px;
+    width: max-content;
+    margin: auto;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-size: 15px;
+}
+
+.status-in-the-way{
+    background-color: #B2FFC8;
+    color: #3c9c5b;
+}
+
+.status-searching{
+    background-color: #C3FFFD;
+    color: #2C8A83;
+}
+
+.status-view-factor{
+    background-color: var(--maize);
+    color: #070703;
+    cursor: pointer;
+}

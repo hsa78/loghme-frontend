@@ -1,0 +1,11 @@
+@import "../../util/util.css";
+
+.footer-container{
+    background-color: var(--english-green);
+    text-align: center;
+    color: #CCDBDD;
+    padding: 0px;
+    margin: 0;
+    font-size: 22px;
+    font-family: vazir;
+}
