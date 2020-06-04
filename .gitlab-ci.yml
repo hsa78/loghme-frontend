@@ -1,6 +1,6 @@
 docker-build-master:
  # Official docker image.
- image: docker:latest
+ image: docker:19-git
  stage: build
  #services:
  #  - docker:dind
