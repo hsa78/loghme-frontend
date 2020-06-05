@@ -8,6 +8,6 @@ docker-build-master:
     - docker login -u "falagheband" -p "ftmal3922"
   script:
     - docker build -t myapp .
-    - docker push falagheband/ie_frontend
+    - docker push myapp:latest
   only:
     - master
