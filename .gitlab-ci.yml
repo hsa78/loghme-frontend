@@ -7,7 +7,7 @@ docker-build-master:
   before_script:
     - docker login -u "falagheband" -p "ftmal3922"
   script:
-    - docker build -t myapp .
-    - docker push myapp:latest
+    - docker build -t ie_frontend .
+    - docker push falagheband/ie_frontend:latest
   only:
     - master
