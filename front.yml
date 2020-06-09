@@ -1,0 +1,41 @@
+apiVersion: v1
+kind: Service
+metadata:  
+  name: frontend
+spec:
+  selector:    
+    app: loghme-frontend
+  type: NodePort
+  ports:  
+  - name: loghme-frontend
+    port: 80
+    nodePort: 30756
+    protocol: TCP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: loghme-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: loghme-frontend
+  template:
+    metadata:
+      labels:
+        app: loghme-frontend
+    spec:
+      containers:
+      - name: loghme-frontend
+        image: falagheband/ie_frontend:latest
+        imagePullPolicy: "Always"
+        resources:
+          requests:
+            memory: "100Mi"
+            cpu: "0.1"
+          limits:
+            cpu: "0.1"
+            memory: "100Mi"
+        ports:
+        - containerPort: 80
