@@ -10,13 +10,14 @@ class SocialMediaLoginBox extends React.Component{
         this.onSignIn = this.onSignIn.bind(this);
     }
     onSignIn(googleUser) {
+        console.log(1);
         var profile = googleUser.getBasicProfile();
-        // console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-        // console.log('Name: ' + profile.getName());
-        // console.log('Image URL: ' + profile.getImageUrl());
-        // alert('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log(2);
+        console.log(id_token);
         var params = {
-            "email": profile.getEmail()
+            "email": profile.getEmail(),
+            "idToken": id_token
         };
 		var queryString = Object.keys(params).map(function(key) {
     		return key + '=' + params[key]
@@ -62,7 +63,7 @@ class SocialMediaLoginBox extends React.Component{
         document.body.appendChild(script);
         window.gapi.load('client:auth2', () => {
             window.gapi.client.init({
-                client_id: '822539019781-nmvk2v9blnopsb106bq5g6f8889cojtp.apps.googleusercontent.com',
+                client_id: '822539019781-se58ntb5ml53t7es2odus494vkifdtso.apps.googleusercontent.com',
                 scope: 'profile'
             })
           }
@@ -74,7 +75,8 @@ class SocialMediaLoginBox extends React.Component{
             'height': 50,
             'longtitle': true,
             'theme': 'dark',
-            'onsuccess': this. onSignIn
+            'onsuccess': this.onSignIn,
+            'onfailure': this.onFailure
           });
 
     }
