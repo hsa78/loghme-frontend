@@ -28,7 +28,7 @@ class PrivateRoute extends React.Component{
 
     async checkJwt(){
         const jwtToken = window.localStorage.getItem('jwtToken') || '';
-        const response = await fetch('http://localhost:8080/jwtValidation',  { 
+        const response = await fetch('http://185.166.105.6:30005/CA7_backend/jwtValidation',  { 
                                     method: 'GET', 
                                     headers: new Headers({
                                     'Authorization': jwtToken
