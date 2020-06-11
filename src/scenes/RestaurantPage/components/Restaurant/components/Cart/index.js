@@ -15,7 +15,7 @@ function Cart(props){
 
     React.useEffect(()=> {
         setIsLoading(true);
-        fetch('http://localhost:8080/user/cart', { 
+        fetch('http://185.166.105.6:30005/CA7_backend/user/cart', { 
             method: 'GET', 
             headers: new Headers({
             'Authorization': window.localStorage.getItem('jwtToken') || ''
@@ -63,7 +63,7 @@ function Cart(props){
                 'Authorization': window.localStorage.getItem('jwtToken') || ''
 	        }
 	    };
-        fetch('http://localhost:8080/user/finalizeOrder', requestOptions)
+        fetch('http://185.166.105.6:30005/CA7_backend/user/finalizeOrder', requestOptions)
         .then(resp => {
                 if (resp.ok){
                     setIsLoading(false);

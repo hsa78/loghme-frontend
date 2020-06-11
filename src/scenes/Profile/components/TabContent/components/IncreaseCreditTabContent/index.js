@@ -31,7 +31,7 @@ function IncreaseCreditTabContent(props){
                 },
                 body: queryString
             };
-            fetch('http://localhost:8080/user/credit', requestOptions)
+            fetch('http://185.166.105.6:30005/CA7_backend/user/credit', requestOptions)
             .then(resp => {
                     if (resp.ok){
                         setValue('');

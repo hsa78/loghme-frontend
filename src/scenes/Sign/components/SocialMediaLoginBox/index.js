@@ -31,7 +31,7 @@ class SocialMediaLoginBox extends React.Component{
 	        body: queryString
         };
 	    
-        fetch('http://localhost:8080/googleLogin', requestOptions)
+        fetch('http://185.166.105.6:30005/CA7_backend/googleLogin', requestOptions)
         .then(resp => {
                 if (resp.ok)
                     return resp.json();

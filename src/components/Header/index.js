@@ -19,7 +19,7 @@ function Header (props){
 
     function fetchCartBadge(){
         setShowSpinner(true);
-        fetch('http://localhost:8080/user/cartBadge', { 
+        fetch('http://185.166.105.6:30005/CA7_backend/user/cartBadge', { 
                 method: 'GET', 
                 headers: new Headers({
                 'Authorization': window.localStorage.getItem('jwtToken') || ''

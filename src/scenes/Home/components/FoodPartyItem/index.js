@@ -15,7 +15,7 @@ function FoodPartyItem(props){
 
     React.useEffect(()=> {
         setIsLoading(true);
-        fetch('http://localhost:8080/restaurant/brief/' + props.restaurantId, { 
+        fetch('http://185.166.105.6:30005/CA7_backend/restaurant/brief/' + props.restaurantId, { 
             method: 'GET', 
             headers: new Headers({
             'Authorization': window.localStorage.getItem('jwtToken') || ''

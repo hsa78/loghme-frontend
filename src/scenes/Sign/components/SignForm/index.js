@@ -121,7 +121,7 @@ function SignForm(props){
 	        body: queryString
         };
 	    
-        fetch('http://localhost:8080/registration', requestOptions)
+        fetch('http://185.166.105.6:30005/CA7_backend/registration', requestOptions)
         .then(resp => {
                 if (resp.ok){
                     let h = createHistory()
@@ -155,7 +155,7 @@ function SignForm(props){
 	        body: queryString
         };
 	    
-        fetch('http://localhost:8080/login', requestOptions)
+        fetch('http://185.166.105.6:30005/CA7_backend/login', requestOptions)
         .then(resp => {
                 if (resp.ok)
                     return resp.json();

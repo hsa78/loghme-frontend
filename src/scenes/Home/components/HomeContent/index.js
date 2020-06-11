@@ -62,7 +62,7 @@ function HomeContent(props){
                 body: queryString
             };
             
-            fetch('http://localhost:8080/search', requestOptions)
+            fetch('http://185.166.105.6:30005/CA7_backend/search', requestOptions)
             .then(resp => {
                     if (resp.ok)
                         return resp.json();
@@ -117,7 +117,7 @@ function HomeContent(props){
                 },
                 body: queryString
             };
-            fetch('http://localhost:8080/restaurant/all', requestOptions)
+            fetch('http://185.166.105.6:30005/CA7_backend/restaurant/all', requestOptions)
               .then(resp => {
                     if (resp.ok)
                       return resp.json();

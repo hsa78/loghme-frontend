@@ -27,7 +27,7 @@ function FoodPartyContainer (props){
         if(remainingTime.minutes === 0 && remainingTime.seconds === 0){
             // alert('gettingTime');
             setShowSpinner(true);
-            fetch('http://localhost:8080/foodParty/view', { 
+            fetch('http://185.166.105.6:30005/CA7_backend/foodParty/view', { 
                 method: 'GET', 
                 headers: new Headers({
                 'Authorization': window.localStorage.getItem('jwtToken') || ''
@@ -48,7 +48,7 @@ function FoodPartyContainer (props){
                 setShowSpinner(false);
             });
 
-            fetch('http://localhost:8080/foodParty/time', { 
+            fetch('http://185.166.105.6:30005/CA7_backend/foodParty/time', { 
                 method: 'GET', 
                 headers: new Headers({
                 'Authorization': window.localStorage.getItem('jwtToken') || ''

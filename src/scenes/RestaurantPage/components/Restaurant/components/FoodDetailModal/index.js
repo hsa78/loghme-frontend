@@ -55,7 +55,7 @@ function FoodDetailModal(props){
 	        },
 	        body: queryString
 	    };
-        fetch('http://localhost:8080/user/cart', requestOptions)
+        fetch('http://185.166.105.6:30005/CA7_backend/user/cart', requestOptions)
         .then(resp => {
                 if (resp.ok){
                     toast.success('You ordered successfully!', {});

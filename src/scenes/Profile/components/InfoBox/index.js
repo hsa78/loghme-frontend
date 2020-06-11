@@ -19,7 +19,7 @@ class InfoBox extends React.Component{
 
     fetchPersonalInfo(){
         this.setState(prevState => ({showSpinner: true}));
-        fetch('http://localhost:8080/user/info',{ 
+        fetch('http://185.166.105.6:30005/CA7_backend/user/info',{ 
             method: 'GET', 
             headers: new Headers({
             'Authorization': window.localStorage.getItem('jwtToken') || ''
@@ -39,7 +39,7 @@ class InfoBox extends React.Component{
     }
 
     fetchCredit(){
-        fetch('http://localhost:8080/user/credit',{ 
+        fetch('http://185.166.105.6:30005/CA7_backend/user/credit',{ 
             method: 'GET', 
             headers: new Headers({
             'Authorization': window.localStorage.getItem('jwtToken') || ''
