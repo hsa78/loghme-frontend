@@ -59,7 +59,7 @@ class Restaurant extends React.Component{
     }
 
     fetchRestaurantData() {
-        fetch('http://localhost:8080/restaurant/detail/' + this.props.id, { 
+        fetch('http://185.166.105.6:30005/CA7_backend/restaurant/detail/' + this.props.id, { 
             method: 'GET', 
             headers: new Headers({
             'Authorization': window.localStorage.getItem('jwtToken') || ''
