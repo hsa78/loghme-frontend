@@ -7,9 +7,7 @@ import PersianNumber from '../../../../../../util/util';
 import styles from './style.module.css'
 
 function FoodBox(props){
-
     const [modalShow, setModalShow] = React.useState(false);
-
     return(
         <div class={`${styles['styled-box']} col-lg-3`}>
             <img src={props.image} class={styles['food-img']} alt="food"/>
