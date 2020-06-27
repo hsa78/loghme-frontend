@@ -1,6 +1,0 @@
-[submodule "backend"]
-	path = backend
-	url = https://github.com/hsa78/loghme-backend.git
-[submodule "frontend"]
-	path = frontend
-	url = https://github.com/hsa78/loghme-frontend
